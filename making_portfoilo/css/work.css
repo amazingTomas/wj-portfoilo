@@ -1,0 +1,254 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+html,body{width: 100%; height: 100%; overflow: hidden;}
+@font-face {
+    font-family: "dutch";
+    src: url(../font/Dutch\ 801\ Bold\ BT.ttf);
+}
+
+.content-wrap{width: 70%; margin: 0 auto;  height: 100%;}
+
+.header{
+    width: 100%; height: 100px; 
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+}
+.header .header-wrap{
+    width: 80%; height: 100px;
+    margin: 0 auto;
+}
+.header .logo{
+    float: left;
+    width: 100px; height: 70px;
+    margin-top: 30px;
+}
+.header .nav{
+    float: right;
+    width: 700px; height: 50px;
+    margin-top: 50px;
+}
+.header .nav ul{
+    width: 100%; overflow: hidden;
+}
+.header .nav ul li{
+    float: left;
+    width: 25%; line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+.header .nav ul li a{
+    display: inline-block;
+    width: 100%;
+    font-family: "dutch";
+    font-size: 22px;
+    color: #0c3e9a;
+}
+.header .nav ul li::after{
+    content: "";
+    position: absolute;
+    bottom: 0px; left: 50%;
+    border-radius: 3px;
+    transform: translateX(-50%);
+    width: 0; height: 5px;
+    background-color: #b784f8;
+    transition: 0.45s;
+    z-index: -1;
+}
+.header .nav ul li:hover::after,
+.header .nav ul li.on::after
+{
+    width: 70px;
+}
+
+
+
+
+
+.section{width: 100%; height: 100%;}
+.section .click-content{
+    width: 40%; height: 70%;
+    float: left;
+    margin-right: 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 30px;
+}
+.section .click-content .top{
+    width: 100%; height: 68%;
+    margin-bottom: 2%;
+}
+.section .click-content .top .left{
+    width: 55%; height: 100%;
+    margin-right: 2%;
+    float: left;
+}
+.section .click-content .top .left .content:nth-child(1){
+    width: 100%; height: 50%;
+    background-color: #de5e3b;
+    margin-bottom: 3.3%;
+    background-image: url(../images/click-logo.jpg.png) ;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section .click-content .top .left .content:nth-child(2){
+    width: 100%; height: 48%;
+    background-color: #de5e3b;
+    background-image: url(../images/click-book.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section .click-content .top .right{
+    float: left;
+    width: 43%; height: 100%;
+}
+.section .click-content .top .right .content{
+    width: 100%; height: 100%;
+    background-color: #de5e3b;
+    background-image: url(../images/click-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section .click-content .bottom{
+    width: 100%; height: 30.5%;
+}
+.section .click-content .bottom .content{
+    width: 100%; height: 100%;
+    background-color: #de5e3b;
+    background-image: url(../images/click-package.jpg);
+    background-position:  30% center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section .click-content .content{position: relative; overflow: hidden; cursor: pointer;}
+.section .click-content p{
+    display: inline-block;
+    width: 200px; height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    color: #de5e3b;
+    font-family: "dutch";
+    font-size: 20px;
+    position: absolute;
+    bottom: -100px; left: 50%; 
+    transform: translateX(-50%);
+    transition: 0.45s;
+    z-index: 10;
+}
+.section .click-content .content:hover p,
+.section .click-content .content.on p{bottom: 20px;}
+
+.section .click-content .content::after{
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    background-color: #e2d9d2be;
+    transition: 0.35s;
+    top: 0; left: 0;
+    z-index: 9;
+}
+.section .click-content .content:hover::after,
+.section .click-content .content.on::after{background: none;}
+
+
+
+
+
+.section .img-content{
+    width: 55%; height: 70%;
+    float: left;
+    background-color: aliceblue;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-y: scroll;
+    margin-top: 30px;
+}
+.section .img-content img{width: 100%; display: none;}
+.section .img-content img:nth-child(1){display: block;}
+.img-content::-webkit-scrollbar{
+    background-color: #f9f2edab;
+    width: 15px;
+}
+.img-content::-webkit-scrollbar-thumb{
+    background-color: #e2d9d2;
+    border-radius: 50px;
+    /* 스크롤 */
+}
+
+
+
+@media screen and (min-width : 641px) and (max-width : 1024px) {
+    .header{width: 100%;}   
+    .header .header-wrap{width: 90%;} 
+    .header .logo{width: 80px;}
+    .header .logo img{width: 100%;}
+    .header .nav{width: 500px;}
+    .header .nav ul{width: 100%;}
+    .header .nav ul li{width: 25%;}
+
+    .content-wrap{width: 95%;}
+    .section .click-content{width: 30%; height: 40%; margin-right: 4%;}
+    .section .click-content p{width: 120px; font-size: 16px;}
+
+
+    .section .img-content{width: 66%;}
+
+}
+
+
+
+@media screen and (max-width : 640px) {
+    .header{width: 100%;}   
+    .header .header-wrap{max-width: 80%;} 
+    .header .logo{width: 100%; text-align: center; margin-top: 20px;}
+    .header .logo img{width: 50px;}
+    .header .nav{width: 100%; margin-top: -20px;}
+    .header .nav ul{width: 100%;}
+    .header .nav ul li{width: 25%;}
+
+
+    .content-wrap{width: 95%;}
+    .section .click-content{width: 100%; height: 30%; top: 30%; margin-left: 3%;}
+    .section .click-content p{width: 90px; font-size: 12px;}
+
+    .section .click-content .top{width: 74%; float: left;}
+    .section .click-content .top .left{width: 61%;}
+    .section .click-content .top .left .content:nth-child(1){
+        width: 49%; height: 50%; float: left; margin-right: 3%;
+    }
+    .section .click-content .top .left .content:nth-child(2){
+        width: 47%; height: 50%; float: left;
+    }
+    .section .click-content .top .right{width: 30%; margin-left: -2px;}
+    .section .click-content .top .right .content{
+        width: 100%; height: 50%;
+    }
+    .section .click-content .bottom{width: 22%; float: left; margin-left: -4%;}
+    .section .click-content .bottom .content{
+        width: 100%; height: 110%;
+        background-position-x: center;
+    }
+
+
+    .section .img-content{width: 100%; height: 60%; top: 25%;}
+
+
+
+
+
+
+
+
+}
