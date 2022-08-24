@@ -6,7 +6,6 @@ html,body{width: 100%; height: 100%; overflow-y: hidden;}
 
 @font-face {
     font-family: "dutch";
-    src: url(../font/Dutch\ 801\ Bold\ BT.ttf);
 }
 
 
@@ -80,7 +79,6 @@ html,body{width: 100%; height: 100%; overflow-y: hidden;}
     position: relative;
     left: 50%; top: 40%;
     transform: translate(-50%, -30%);
-    z-index: 3;
 }
 .section .img-section img:nth-child(2){
     position: absolute;
@@ -215,7 +213,6 @@ html,body{width: 100%; height: 100%; overflow-y: hidden;}
         transform: rotate(90deg);
         overflow: hidden;
         width: 300px;
-        /* background-color: yellow; */
     }
     .move-txt:nth-child(4) .move-wrap{
         width: 1000%; height: 0%;
@@ -284,7 +281,7 @@ html,body{width: 100%; height: 100%; overflow-y: hidden;}
         transform: rotate(90deg);
         overflow: hidden;
         width: 220px;
-        /* background-color: yellow; */
+
     }
     .move-txt:nth-child(4) .move-wrap{
         width: 700%; height: 0%;
