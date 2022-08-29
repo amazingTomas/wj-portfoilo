@@ -164,7 +164,7 @@ html,body{
 .section:nth-child(3) .content-wrap{height: 100%;}
 .section:nth-child(3) .txt-section{
     width: 45%; height: 80%;
-    left: 10%; top: 42%;
+    left: 0%; top: 42%;
     box-sizing: border-box;
     position: relative;
     z-index: 5;
@@ -210,12 +210,13 @@ html,body{
 .section:nth-child(3) .img-section img:nth-child(1){
     position: absolute;
     width: 260px;
-    top: 10%; left: 15%; 
+    top: 10%; 
+    /* left: 15%;  */
     z-index: 2;
 }
 .section:nth-child(3) .img-section img:nth-child(2){
     position: absolute;
-    top: 40%; left: 53%;
+    top: 40%; left: 45%;
     transform: translateX(-50%);
     width: 540px;
     z-index: 4;
