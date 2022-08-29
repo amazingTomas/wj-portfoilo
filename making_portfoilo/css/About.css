@@ -4,7 +4,7 @@ ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 @font-face {
     font-family: "dutch";
-    src: url(../font/Dutch\ 801\ Bold\ BT.ttf);
+
 }
 html,body{
     width: 100%; height: 100%; 
@@ -90,7 +90,8 @@ html,body{
 }
 .section:nth-child(2) .img-section img:nth-child(2){
     position: absolute;
-    top: 30%; left: 10%;
+    width: 35%;
+    top: 28%; left: 10%;
     z-index: 1;
 }
 .section:nth-child(2) .img-section img:nth-child(3){
@@ -163,7 +164,7 @@ html,body{
 .section:nth-child(3) .content-wrap{height: 100%;}
 .section:nth-child(3) .txt-section{
     width: 45%; height: 80%;
-    left: 10%; top: 42%;
+    left: 0%; top: 42%;
     box-sizing: border-box;
     position: relative;
     z-index: 5;
@@ -171,10 +172,15 @@ html,body{
 .section:nth-child(3) .txt-section p:nth-child(1){
     /* margin-top: 100px; */
     /* width: 100%; */
-    line-height: 35px;
+    line-height: 45px;
     font-size: 30px;
     font-weight: 500;
 }
+
+.sil > P{
+    color: #0c3e9a;
+}
+
 .section:nth-child(3) .txt-section p:nth-child(1) span{
     font-weight: bold; color: #de5e3b;
 }
@@ -189,8 +195,10 @@ html,body{
     padding-top: 20px;
     /* width: 90%; height: 35px; */
     line-height: 35px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 23px;
+    font-weight: 700;
+    color: #0c3e9a;
+
 }
 
 
@@ -201,17 +209,20 @@ html,body{
 }
 .section:nth-child(3) .img-section img:nth-child(1){
     position: absolute;
-    top: 10%; left: 18%; 
+    width: 260px;
+    top: 10%; 
+    /* left: 15%;  */
     z-index: 2;
 }
 .section:nth-child(3) .img-section img:nth-child(2){
     position: absolute;
-    top: 50%; left: 55%;
+    top: 40%; left: 45%;
     transform: translateX(-50%);
-    width: 430px;
+    width: 540px;
     z-index: 4;
 }
 .section:nth-child(3) .img-section img:nth-child(3){
+    width: 240px;
     position: absolute;
     top: 10%; right: 1px;
     z-index: 3;
@@ -265,7 +276,7 @@ html,body{
 .section:nth-child(4) .progress-content h2{
     text-align: center;
     font-family: "dutch";
-    color: #b784f8;
+    color: #0c3e9a;
     padding-bottom: 40px;
 }
 .section:nth-child(4) .progress-content .content{
@@ -326,7 +337,7 @@ html,body{
 
 
 .content > a{
-    margin-left: 580px;
+    margin-left: 780px;
 }
 
 
