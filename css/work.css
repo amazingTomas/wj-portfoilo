@@ -92,7 +92,7 @@ html,body{width: 100%; height: 100%; overflow: hidden;}
     width: 100%; height: 50%;
     background-color: rgb(8, 8, 8);
     margin-bottom: 3.3%;
-    background-image: url(../img/logo.png) ;
+    background-image: url(../img/yous.png) ;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -135,6 +135,9 @@ html,body{width: 100%; height: 100%; overflow: hidden;}
     display: inline-block;
     width: 140px; height: 50px;
     background-color: #fff;
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;                         
     text-align: center;
     line-height: 50px;
     color: #ea633e;
